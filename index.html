@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button id="calculate">(</button></td>
+                    <td><button id="calculate">)</button></td>
+                    <td><button id="calculate">C</button></td>
+                    <td><button id="calculate">%</button></td>
+                </tr>
+                <tr>
+                    <td><button id="calculate">7</button></td>
+                    <td><button id="calculate">8</button></td>
+                    <td><button id="calculate">9</button></td>
+                    <td><button id="calculate">X</button></td>
+                </tr>
+                <tr>
+                    <td><button id="calculate">4</button></td>
+                    <td><button id="calculate">5</button></td>
+                    <td><button id="calculate">6</button></td>
+                    <td><button id="calculate">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="calculate">1</button></td>
+                    <td><button id="calculate">2</button></td>
+                    <td><button id="calculate">3</button></td>
+                    <td><button id="calculate">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="calculate">0</button></td>
+                    <td><button id="calculate">.</button></td>
+                    <td><button id="calculate">/</button></td>
+                    <td><button id="calculate">=</button></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="even">
+    <label><h1>Check here to check whether number is even or odd</h1></label>
+    <input type="text" name="screen" id="evenOdd" onkeyup="isCheck()">
+    <span id="showMsg">  </span>
+<div class="even">
+    <label><h1>Check here to check whether number is prime</h1></label>
+    <input type="text" name="screen" id="prime" onkeyup="isChecks()">
+    <span id="showMsgs">  </span>
+</div>
+<div id="backgroundColor">
+    <!-- <button onclick="changeBg()">click me to change the color</button> -->
+    <select id="selectedValue" name="color" style="font-size: 50px;" onclick="changeBg()">
+        <option value="green" style="color: green" >Green</option>
+        <option value="blue" style="color: blue">Blue</option>
+        <option value="red" style="color: red">Red</option>
+        <option value="orange" style="color: orange">Orange</option>
+    </select>
+</div>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
